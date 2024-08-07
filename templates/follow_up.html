@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow Up Email</title>
+</head>
+<body>
+    <h1>Follow Up Email Configuration</h1>
+    <form action="/follow_up" method="POST">
+        <h2>For Opened Emails</h2>
+        <label for="openedSubject">Subject:</label>
+        <input type="text" id="openedSubject" name="openedSubject" required><br><br>
+
+        <label for="openedBody">Body:</label>
+        <textarea id="openedBody" name="openedBody" rows="10" cols="50" required></textarea><br><br>
+
+        <label for="openedTime">Send Time (HH:MM):</label>
+        <input type="time" id="openedTime" name="openedTime" required><br><br>
+
+        <h2>For Not Opened Emails</h2>
+        <label for="notOpenedSubject">Subject:</label>
+        <input type="text" id="notOpenedSubject" name="notOpenedSubject" required><br><br>
+
+        <label for="notOpenedBody">Body:</label>
+        <textarea id="notOpenedBody" name="notOpenedBody" rows="10" cols="50" required></textarea><br><br>
+
+        <label for="notOpenedTime">Send Time (HH:MM):</label>
+        <input type="time" id="notOpenedTime" name="notOpenedTime" required><br><br>
+
+        <button type="submit">Schedule Follow Up</button>
+    </form>
+</body>
+</html>

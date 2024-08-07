@@ -1,0 +1,8 @@
+First create a env file and activate it to install dependencies using following commands:
+  for mac: python -m vnev env , source env/bin/activate
+  for windows:python -m vnev env,.\env\Scripts\activate
+
+Command to install dependencies
+pip install -r requirements.txt
+
+run the script using: python app.py   
